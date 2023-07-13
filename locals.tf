@@ -77,7 +77,13 @@ locals {
       "arn:aws:iam::304333971729:role/AWSReservedSSO_AWSAdministratorAccess_15917e8fc9a457be"
     ]
   }
-
+  topics = [
+    "tf-amber-alarm",
+    "tf-red-alarm",
+    "tf-green-alarm",
+    "Server-Alarm"
+  ]
   #public_eu_west_2c = "subnet-014d79c0106c1b6d4"
 
 }
+

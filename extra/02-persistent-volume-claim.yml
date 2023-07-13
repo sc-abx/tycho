@@ -1,0 +1,12 @@
+#02-persistent-volume-claim.yml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ebs-mysql-pv-claim
+spec: 
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2
+  resources: 
+    requests:
+      storage: 4Gi

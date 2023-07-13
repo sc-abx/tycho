@@ -19,3 +19,7 @@ variable "dev_access_to_DB" {
   type    = bool
   default = true
 }
+variable "email_subscription_endpoint" {
+  description = "The email address to which notifications should be sent"
+  default     = "shaun.carter@airboxsystems.com"
+}
